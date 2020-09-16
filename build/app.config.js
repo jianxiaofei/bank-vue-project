@@ -7,7 +7,6 @@ const path = require('path')
 const getModules = require('./getMutiPageConfig')
 const pages = getModules()
 const isProuction = process.env.NODE_ENV === 'production'
-
 const resolvePath = dir => path.join(__dirname, '../', dir)
 
 const mainPage = {
@@ -35,7 +34,7 @@ module.exports = {
     config.resolve.extensions = ['.js', '.jsx', '.vue']
     config.plugins.push(
       new AddAssetHtmlPlugin({
-        filepaht: path.resolve(__dirname, '../public/vendor/vendor*.js'),
+        filepath: path.resolve(__dirname, '../public/vendor/vendor*.js'),
         publicPath: `${process.env.VUE_APP_BASE_URL}vendor/`,
         outputPath: './vendor',
       }),

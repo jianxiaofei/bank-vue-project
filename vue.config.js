@@ -3,7 +3,7 @@ const guipReq = require('./mock/guipReq');
 const vueConfig = require('./build/app.config');
 
 const appConfigWebpack = vueConfig.configureWebpack;
-const appChainWebpack = vueConfig.appChainWebpack;
+const appChainWebpack = vueConfig.chainWebpack;
 module.exports = {
   ...vueConfig,
   publicPath: process.env.NODE_ENV === 'production' ? process.env.VUE_APP_BASE_URL : '/',
