@@ -1,0 +1,5 @@
+const fs = require("fs")
+const { relative } = require("path")
+const path = require("path")
+const appDirectory = path.resolve(__dirname, "../src")
+module.exports = relativePath => path.resolve(appDirectory, relativePath)

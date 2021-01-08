@@ -63,7 +63,7 @@ module.exports = {
     'valid-typeof': 2,
     'prefer-const': 2,
     'array-bracket-spacing': [2, 'never'],
-    'arrow-parens': ['error', 'always'],
+    // 'arrow-parens': ['error', 'always'],
   },
   overrides: [
     {

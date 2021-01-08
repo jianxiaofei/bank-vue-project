@@ -7,9 +7,9 @@
         "lint": "eslint --fix --ext .js,.vue src",
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
-        "dll": "webpack -p --progess --config ./webpack.dll.config.js",
+        "dll": "webpack -p --progess --config ./build/webpack.dll.config.js",
         "changelog": "conventional-changelog -pangular -i CHANGELOG.md -s",
-        "analyz": "cross-env ANALYZ=true vue-cli-service buid"
+        "analyz": "cross-env ANALYZ=true vue-cli-service build"
     },
     "gitHooks": {
         "pre-push": "npm run lint",
@@ -64,6 +64,7 @@
         "eslint-plugin-vue": "^5.2.3",
         "less": "^3.10.3",
         "less-loader": "^5.0.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.4",
         "terser-webpack-plugin": "^2.2.1",
         "vue-template-compiler": "^2.6.10",
         "webpack-bundle-analyzer": "^3.6.0",
