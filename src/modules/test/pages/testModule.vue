@@ -2,7 +2,7 @@
   <div>
     <button @click="changeComponent">click</button>
     testModule111
-    <!-- <component :is="curr" /> -->
+    <component :is="curr" />
   </div>
 </template>
 

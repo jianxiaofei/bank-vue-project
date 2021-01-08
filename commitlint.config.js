@@ -8,7 +8,7 @@ module.exports = {
     // fix: 修补bug
     // style: 样式
     'type-enum': [2, 'always', ['feat', 'fix', 'docs', 'reactor', 'test', 'chore', 'revert', 'build', 'perf', 'ci', 'revert']],
-    'type-empty': [2, 'always'],
+    'type-empty': [2, 'never'],
     'subject-empty': [2, 'never'],
     'header-max-length': [2, 'always', 72],
     'subject-full-stop': [0, 'never'],

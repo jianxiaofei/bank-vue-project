@@ -6,7 +6,7 @@ Vue.use(vueRouter)
 const routes = [
   {
     path: '/',
-    name:'index',
+    name: 'index',
     redirect: '/testModule',
   },
   {
