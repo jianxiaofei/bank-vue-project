@@ -39,6 +39,23 @@ module.exports = {
   configureWebpack: config => {
     config.output.filename = '[name]/[name].entry.js'
     config.output.chunkFilename = '[name],chunk.js'
+    config.optimization = {
+      splitChunks: {
+        cacheGroups: {
+          vendors: false,
+          common: false,
+          defalut: false,
+          // base: {
+          //   name: 'base',
+          //   minChunks: 1,
+          //   chunks: 'initial',
+          //   test: module => /ant-design-vue/.test(module.context),
+          //   priority: 8,
+          //   enforce: true,
+          // },
+        },
+      },
+    }
   },
   pluginOptions: {},
 }
